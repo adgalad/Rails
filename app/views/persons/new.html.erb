@@ -1,0 +1,24 @@
+
+<h1>Create a new Person</h1>
+
+<%= form_for @person, url: {action: "create"}, html: {class: "nifty_form"} do |field| %>
+	<table>
+ 		<tr> 
+ 			<td> Name </td>
+ 			<td> <%= field.text_field :first_name %> </td>
+ 		</tr>
+ 	 	<tr> 
+ 			<td> Last Name </td>
+ 			<td> <%= field.text_field :last_name %> </td>
+ 		</tr>
+ 		<tr> 
+ 			<td> ID </td>
+ 			<td> <%= field.text_field :id_number %> </td>
+ 		</tr>
+ 		<tr> 
+ 			<td> Age </td>
+ 			<td> <%= field.number_field :age %> </td>
+ 		</tr>
+	</table>
+ 	<%= field.submit "Create" %>
+ <% end %>

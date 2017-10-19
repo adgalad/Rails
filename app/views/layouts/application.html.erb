@@ -1,0 +1,80 @@
+<head>
+	<title>Retro Diner</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %> 
+</head>
+<body>
+  <div id="header">
+    <div>
+      <a href="index.html"><%= image_tag("logo.png", class: "logo", width: "513", height: "84", alt: "", title: "") %></a>
+      <a href="index.html"> <%= image_tag("waitress.png", width: "332", height: "205", alt: "", title: "") %></a>
+      <ul class="navigation">
+        <li>
+          <a class="active" href="/">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <%= link_to "Menú", "/products?type=burger" %>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <%= yield %>
+  <div id="footer">
+    <div>
+      <ul>
+        <li class="first">
+          <h2>Delivery Hotline</h2>
+          <h3>Call 0-123-456-789</h3>
+          <ul>
+            <li>
+              <a href="http://www.freewebsitetemplates.com/go/facebook" class="facebook"></a>
+            </li>
+            <li>
+              <a href="http://www.freewebsitetemplates.com/go/twitter" class="twitter"></a>
+            </li>
+            <li>
+              <a href="http://www.freewebsitetemplates.com/go/googleplus" class="googleplus"></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html"><%= image_tag("logo-footer.png", class: "logo",  alt: "") %></a>
+          <ul class="navigation">
+            <li>
+              <%= link_to 'Inicio', '/' %>
+            </li>
+            <li>
+            	<%= link_to 'Acerca', '/about' %>
+            </li>
+            <li>
+              <%= link_to 'Menú', '/products' %>
+            </li>
+            <li>
+            	<%= link_to 'Contacto', '/contact' %>
+            </li>
+          </ul>
+          <span>&copy; 2016 RetroDiner.com </span>
+        </li>
+
+        <li class="last">
+          <h2>Follow Us By Email</h2>
+          <form action="index.html">
+            <input type="text" name="subscribe" value="Enter Your Email Here...">
+            <input type="submit" value="">
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

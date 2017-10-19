@@ -1,0 +1,716 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body
+  margin: 0
+  padding: 0
+  background: image-url("bg-body.jpg")
+  line-height: 25px
+
+a
+  outline: 0
+
+img
+  border: 0
+
+@font-face
+  font-family: 'Nunito'
+  src: font-url('nunito-regular-webfont.eot')
+  src: font-url('nunito-regular-webfont.eot') format("embedded-opentype"), font-url('nunito-regular-webfont.woff') format("woff"), font-url('nunito-regular-webfont.ttf') format("truetype"), font-url('nunito-regular-webfont.svg') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+@font-face
+  font-family: 'Lobster 14'
+  src: font-url('lobster-webfont.eot')
+  src: font-url('lobster-webfont.eot') format("embedded-opentype"), font-url('lobster-webfont.woff') format("woff"), font-url('lobster-webfont.ttf') format("truetype"), font-url('lobster-webfont.svg') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+@font-face
+  font-family: 'Limelight'
+  src: font-url('limelight-webfont.eot')
+  src: font-url('limelight-webfont.eot') format("embedded-opentype"), font-url('limelight-webfont.woff') format("woff"), font-url('limelight-webfont.ttf') format("truetype"), font-url('limelight-webfont.svg') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+#header
+  height: 205px
+  width: 100%
+  background: transparent image-url("bg-navigation.png")
+  background-repeat: repeat-x
+  background-position: bottom
+  div
+    width: 960px
+    margin: 0 auto
+    height: 203px
+    position: relative
+    a img
+      border: 0
+      float: right
+      overflow: hidden
+    img.logo
+      border: 0
+      float: left
+      overflow: hidden
+      margin-top: 40px
+    ul.navigation
+      margin: 0
+      padding: 0
+      font-family: 'Numito'
+      font-size: 16px
+      list-style-type: none
+      position: absolute
+      left: 0px
+      top: 160px
+      overflow: hidden
+      width: 620px
+      li
+        float: left
+        &:first-child a
+          padding-left: 0
+        a
+          text-decoration: none
+          padding: 0 30px
+          color: #ebe9d7
+          font-family: 'Lobster 14'
+          font-size: 16px
+          color: #94c4c7
+          font-size: 21px
+          &:hover, &.active
+            color: #ebe9d7
+
+#body
+  width: 960px
+  margin: 0 auto
+  overflow: hidden
+  .featured
+    width: 960px
+    overflow: hidden
+    margin-bottom: 0
+    img
+      border: 0
+    h2
+      font-family: 'Lobster 14'
+      font-size: 36px
+      color: #1b6568
+      display: block
+      font-weight: normal
+    p
+      font-family: 'Nunito'
+      font-size: 16px
+      color: #4c1407
+      a
+        font-family: 'Nunito'
+        font-size: 16px
+        color: #4c1407
+        &:hover
+          color: #80210b
+    ul
+      list-style-type: none
+      margin: 40px 0 0 0
+      padding: 0
+      li
+        float: left
+        width: 320px
+        height: 242px
+        text-align: center
+        background: transparent image-url("frame.png")
+        background-repeat: no-repeat
+        background-position: top
+        height: 202px
+        width: 280px
+        padding: 8px 22px 22px 18px
+  #content
+    width: 960px
+    margin: 30px 0
+    height: auto
+    padding-top: 18px
+    background: transparent image-url("bg-content-top.png")
+    background-position: center top
+    background-repeat: no-repeat
+    div
+      width: 960px
+      background: transparent image-url("bg-content-bottom.png")
+      background-position: center bottom
+      background-repeat: no-repeat
+      padding-bottom: 22px
+      div
+        width: 860px
+        padding: 10px 50px 20px 50px
+        background: transparent image-url("bg-content.png")
+        background-position: center center
+        background-repeat: repeat-y
+        h1
+          font-family: 'Lobster 14'
+          font-size: 36px
+          color: #1b6568
+          font-weight: normal
+          margin-bottom: 50px
+        ul
+          list-style-type: none
+          margin: 0
+          padding: 0
+          li
+            float: none
+            margin: 0 0 50px 0
+            padding: 0
+            h4
+              font-family: 'Nunito'
+              font-size: 16px
+              color: #822619
+              font-weight: normal
+            h2
+              font-family: 'Lobster 14'
+              font-size: 18px
+              color: #822619
+              font-weight: normal
+              a
+                font-family: 'Lobster 14'
+                font-size: 24px
+                color: #822619
+                text-decoration: none
+                font-weight: normal
+            p
+              font-family: 'Nunito'
+              font-size: 16px
+              color: #822619
+              font-weight: normal
+              a
+                font-family: 'Nunito'
+                font-size: 16px
+                color: #822619
+                font-weight: normal
+                text-decoration: underline
+                &:hover
+                  color: #a0210b
+              span
+                font-family: 'Nunito'
+                font-size: 14px
+                color: #822619
+                font-weight: normal
+            h2 a:hover
+              color: #80210b
+  .content
+    div
+      div
+        form
+          label
+            display: block
+            span
+              display: block
+              color: #4c1407
+              font-family: 'Nunito'
+              font-size: 16px
+              font-weight: normal
+            input
+              background: transparent image-url("interface.png") no-repeat 0 -77px
+              width: 286px
+              height: 20px
+              border: 0
+              padding: 5px
+              margin-bottom: 10px
+            textarea
+              background: transparent image-url("interface.png") no-repeat 0 -157px
+              width: 522px
+              height: 206px
+              border: 0
+              padding: 5px
+              margin-bottom: 5px
+          input[type="submit"]
+            background: transparent image-url("button.png") no-repeat 0 -450px
+            width: 101px
+            height: 36px
+            border: 0
+            padding: 5px
+            margin-bottom: 20px
+            cursor: pointer
+            &:hover
+              background: transparent image-url("button.png") no-repeat 0 -364px
+        width: 540px
+        padding: 10px 40px 20px 40px
+        background: transparent image-url("bg-content2.png")
+        background-position: center center
+        background-repeat: repeat-y
+        h4
+          font-size: 24px
+          color: #822619
+          font-family: 'Lobster 14'
+          font-weight: normal
+        p
+          font-family: 'Nunito'
+          font-size: 16px
+          color: #4c1407
+          text-align: justify
+          a
+            font-family: 'Nunito'
+            font-size: 16px
+            color: #4c1407
+            &:hover
+              color: #80210b
+        h1
+          font-family: 'Lobster 14'
+          font-size: 36px
+          color: #1b6568
+          font-weight: normal
+        ul
+          list-style-type: none
+          margin: 0
+          padding: 0
+          width: 580px
+          margin-left: -22px
+          li
+            margin-bottom: 20px
+            border-style: dotted
+            border-top: none
+            border-left: none
+            border-right: none
+            padding: 0 25px 10px 25px
+            position: relative
+            &.last
+              border: none
+            h2 a
+              font-family: 'Lobster 14'
+              font-size: 24px
+              color: #822619
+              font-weight: normal
+              text-decoration: none
+            p
+              font-family: 'Nunito'
+              font-size: 16px
+              color: #822619
+              font-weight: normal
+              text-decoration: none
+              width: 440px
+              a
+                font-family: 'Nunito'
+                font-size: 16px
+                color: #822619
+                font-weight: normal
+                &:hover
+                  font-family: 'Nunito'
+                  font-size: 16px
+                  color: #80210b
+                  font-weight: normal
+            span.price
+              background: transparent image-url("icon.png") no-repeat 0 0px
+              width: 110px
+              height: 80px
+              display: block
+              text-align: center
+              line-height: 80px
+              font-family: 'Limelight'
+              color: #ebe9d7
+              font-size: 16px
+              position: absolute
+              left: 480px
+              top: 0px
+        div
+          background: none
+          text-align: left
+          width: 530px
+          margin: 0
+          padding: 0
+        div.ingredient
+          background: none
+          text-align: left
+          width: 200px
+          margin: 0
+          padding: 0
+      width: 620px
+      background: transparent image-url("bg-content-bottom2.png")
+      background-position: center bottom
+      background-repeat: no-repeat
+      padding-bottom: 12px
+    width: 620px
+    margin: 30px 40px 30px 0
+    height: auto
+    padding-top: 18px
+    background: transparent image-url("bg-content-top2.png")
+    background-position: center top
+    background-repeat: no-repeat
+    float: left
+  .sidebar
+    width: 280px
+    float: left
+    margin: 30px 0
+    text-align: center
+    padding-top: 30px
+    h1
+      color: #1b6568
+      font-family: 'Lobster 14'
+      font-size: 36px
+      font-weight: normal
+      margin-bottom: 10px
+    span
+      color: #4c1407
+      font-family: 'Nunito'
+      font-size: 16px
+      font-weight: normal
+      display: block
+    ul.navigation
+      font-family: 'Nunito'
+      font-size: 24px
+      list-style-type: none
+      margin: 0 0 0 0
+      padding: 0
+      li
+        border-style: solid
+        border-color: #822619
+        border-left: none
+        border-right: none
+        border-top: none
+        height: 50px
+        line-height: 50px
+        &.first
+          border-style: solid
+          border-color: #822619
+          border-left: none
+          border-right: none
+        a
+          text-decoration: none
+          font-family: 'Limelight'
+          font-size: 32px
+          color: #822619
+          text-align: center
+          font-weight: normal
+          &:hover, &.active
+            color: #1b6568
+            font-size: 32px
+            font-family: 'Limelight'
+
+    td.count
+      font-family: 'Nunito'
+      font-size: 24px
+      
+    a.download
+      background: transparent image-url("button.png") no-repeat 0 -96px
+      display: block
+      height: 46px
+      width: 278px
+      line-height: 46px
+      text-decoration: none
+      color: #ebe9d7
+      font-size: 26px
+      font-family: 'Lobster 14'
+      margin-top: 40px
+      &:hover
+        background: transparent image-url("button.png") no-repeat 0 0
+    a.pay
+      background: transparent image-url("button.png") no-repeat 0 -604px
+      display: block
+      height: 46px
+      width: 278px
+      line-height: 46px
+      text-decoration: none
+      color: #ebe9d7
+      font-size: 26px
+      font-family: 'Lobster 14'
+      margin-top: 40px
+      &:hover
+        background: transparent image-url("button.png") no-repeat 0 -508px
+
+    a.cart
+      background: transparent image-url("button.png") no-repeat 0 -779px
+      display: block
+      height: 46px
+      width: 278px
+      line-height: 46px
+      text-decoration: none
+      color: #ebe9d7
+      font-size: 26px
+      font-family: 'Lobster 14'
+      margin-top: 40px
+      &:hover
+        background: transparent image-url("button.png") no-repeat 0 -683px
+    ul
+      li
+        &.last
+          border-bottom: none
+        &.first
+          border-style: dotted
+          border-color: #822619
+          border-left: none
+          border-right: none
+          border-top: dotted
+        border-style: dotted
+        border-color: #822619
+        border-left: none
+        border-right: none
+        border-top: none
+        line-height: 18px
+        padding: 10px 10px
+        font-family: 'Nunito'
+        a
+          font-family: 'Nunito'
+          text-decoration: none
+          color: #3e1c14
+          font-size: 16px
+          &:hover
+            font-family: 'Nunito'
+            text-decoration: none
+            color: #1B6568
+            font-size: 16px
+      list-style-type: none
+      margin: 0 0 50px 0
+      padding: 0
+      margin-top: 30px
+  div#section
+    float: left
+    height: auto
+    margin: 30px 40px 30px 0
+    padding-top: 18px
+    width: 620px
+    div.section
+      background: transparent image-url("bg-blog-top.png")
+      background-repeat: no-repeat
+      background-position: top center
+      width: 532px
+      padding-top: 18px
+      margin: 0 0 50px 0
+      position: relative
+      left: 20px
+      float: right
+      div
+        background: transparent image-url("bg-blog-bottom.png")
+        background-repeat: no-repeat
+        background-position: center bottom
+        width: 532px
+        padding-bottom: 25px
+        div
+          background: transparent image-url("bg-blog-center.png")
+          background-repeat: repeat-y
+          background-position: center
+          width: 452px
+          padding: 10px 40px 10px 40px
+          a img
+            border: 0
+            margin: 0 20px 0 0
+            float: left
+          h2
+            font-family: 'Limelight'
+            color: #1b6568
+            font-size: 28px
+            font-weight: normal
+            margin: 0
+            padding: 0
+            text-transform: uppercase
+            width: auto
+            a
+              font-family: 'Limelight'
+              color: #822619
+              font-size: 28px
+              font-weight: normal
+              text-decoration: none
+              line-height: 30px
+              &:hover
+                color: #1b6568
+                text-decoration: none
+          h3
+            font-family: 'Nunito'
+            color: #4c1407
+            font-size: 14px
+            font-weight: normal
+            margin: 25px 0 0 0
+            padding: 0
+            width: auto
+            a
+              color: #80210b
+              text-decoration: underline
+          a
+            text-decoration: underline
+            color: #80210b
+            &:hover
+              text-decoration: underline
+            span
+              font-family: 'Nunito'
+              color: #80210b
+              font-size: 14px
+              font-weight: normal
+              padding: 0
+              width: auto
+          p
+            font-family: 'Nunito'
+            color: #4c1407
+            font-size: 14px
+            width: auto
+            margin-top: 70px
+          a.price
+            background: transparent image-url("icon.png") no-repeat 0 0
+            width: 90px
+            height: 69px
+            display: block
+            padding-top: 20px
+            text-align: center
+            font-family: 'Limelight'
+            font-size: 24px
+            color: #ebe9d7
+            text-decoration: none
+            position: absolute
+            top: 0
+            left: -100px
+            span
+              display: block
+              font-family: 'Limelight'
+              font-size: 24px
+              color: #ebe9d7
+
+#footer
+  height: 130px
+  width: 100%
+  padding: 20px 0
+  margin-top: 20px
+  background: transparent image-url("bg-footer.jpg")
+  background-repeat: repeat-x
+  background-position: top
+  background-color: #1b6568
+  div
+    width: 960px
+    margin: 0 auto
+    ul
+      list-style-type: none
+      margin: 0
+      padding: 0
+      li
+        &.first
+          text-align: left
+        img
+          border: 0
+        float: left
+        width: 300px
+        padding: 0 5px
+        text-align: center
+        &.last
+          padding-left: 75px
+          width: 250px
+        h2
+          color: #ebe9d7
+          font-family: 'Lobster 14'
+          font-weight: normal
+          font-size: 18px
+          margin: 10px 0
+          padding: 0
+        h3
+          color: #ebe9d7
+          font-family: 'Lobster 14'
+          font-size: 24px
+          font-weight: normal
+          margin: 10px 0
+          padding: 0
+        ul
+          list-style-type: none
+          margin: 0
+          padding: 0
+        img.logo
+          margin-top: 20px
+        ul
+          li, .connect li
+            float: left
+            width: auto
+            margin: 0 5px
+            padding: 0
+          li a
+            &.facebook
+              background: transparent image-url("icon.png") no-repeat 0 -228px
+              float: left
+              height: 39px
+              width: 39px
+              &:hover
+                background: transparent image-url("icon.png") no-repeat 0 -139px
+            &.twitter
+              background: transparent image-url("icon.png") no-repeat 0 -584px
+              float: left
+              height: 39px
+              width: 39px
+              &:hover
+                background: transparent image-url("icon.png") no-repeat 0 -495px
+            &.googleplus
+              background: transparent image-url("icon.png") no-repeat 0 -406px
+              float: left
+              height: 39px
+              width: 92px
+              &:hover
+                background: transparent image-url("icon.png") no-repeat 0 -317px
+        input
+          &[type="submit"]
+            background: transparent image-url("button.png") no-repeat 0 -278px
+            width: 215px
+            height: 36px
+            border: 0
+            cursor: pointer
+            &:hover
+              background: transparent image-url("button.png") no-repeat 0 -192px
+          background: transparent image-url("interface.png") no-repeat 0 0
+          border: 0
+          width: 220px
+          height: 17px
+          padding: 5px 5px
+          text-align: center
+          font-family: 'Nunito'
+          font-size: 12px
+          margin-bottom: 10px
+        span
+          display: block
+          color: #ebe9d7
+          font-family: 'Nunito'
+          font-size: 14px
+        ul.navigation
+          list-style-type: none
+          font-family: 'Nunito'
+          font-size: 14px
+          margin: 0 auto
+          padding: 10px 0 0 0
+          display: inline-block
+          overflow: hidden
+          height: 20px
+          li
+            margin: 0
+            padding: 0
+            a
+              color: #ebe9d7
+              font-family: 'Nunito'
+              font-weight: normal
+              font-size: 14px
+              text-decoration: none
+              padding: 0 10px
+              display: block
+              border-style: solid
+              border-right: none
+              border-top: none
+              border-bottom: none
+              border-color: #ebe9d7
+              border-width: 1px
+              line-height: 20px
+              &:hover
+                text-decoration: underline
+            &:first-child a
+              border-left: none
+
+p.hola 
+  font-family: 'Lobster 14'
+  font-weight: normal
+  font-size: 14px
+
+h2 
+  font-family: 'Lobster 14'
+  font-size: 24px
+  color: #822619
+  font-weight: normal
+  text-decoration: none 

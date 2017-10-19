@@ -1,0 +1,100 @@
+  <div id="body">
+    <div class="content">
+      <div>
+        <div>
+          <h1>Burgers</h1>
+          <div> <%= image_tag(@product.image, width: "434", height: "288", alt: "") %> </div>
+          <ul>
+
+              <li>
+                <h2> <%= link_to @product.name, @product %></h2>
+                <p>
+                  <%= @product.description %>
+                </p>
+                <span class="price"><%= @product.price%>Bs</span>
+              </li>
+              <li>
+                <table>
+                  <tr >
+                    <td>
+                      <div class="ingredient">
+                        <h2 >Refresco:</h2>
+                        <div>
+                          <input type="radio" name="drink"> Pequeño
+                        </div>
+                        <br>
+                        <div>
+                          <input type="radio" name="drink"> Mediano
+                        </div>
+                        <br>
+                        <div>
+                          <input type="radio" name="drink"> Grande
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="ingredient">
+                        <h2 >Acompañante:</h2>
+                        <div>
+                          <input type="radio" name="companion"> Papas fritas
+                        </div>
+                        <br>
+                        <div>
+                          <input type="radio" name="companion"> Puré de papa
+                        </div>
+                        <br>
+                        <div>
+                          <input type="radio" name="companion"> Papas horneadas
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="ingredient">
+                        <h2 >Extra:</h2>
+                        <div>
+                          <input type="checkbox" name="extra"> Queso
+                        </div>
+                        <br>
+                        <div>
+                          <input type="checkbox" name="extra"> Ají picante
+                        </div>
+                        <br>
+                        <div>
+                          <input type="checkbox" name="extra"> Pepinillos
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <ul class="navigation">
+          <div>
+           <table size="100%">
+              <tr>
+                <td class="count">Sub-total:</td>
+                <td align="right" class="count">16598.00 Bs</td> 
+              </tr>
+              <tr>
+                <td class="count">I.V.A.:</td>
+                <td align="right" class="count">91.76 Bs</td> 
+              </tr>
+              <tr>
+                <td class="count">Total:</td>
+                <td align="right" class="count">7389.76 Bs</td> 
+              </tr>
+            </table>  
+          </div>
+          <div>
+            <%= link_to "", "/", class: "cart" %>
+            <%= link_to "", "/", class: "pay" %>
+          </div>
+        
+      </ul>
+    </div>  
+  </div>

@@ -1,0 +1,22 @@
+<div id="body">
+  <div class="featured"> <a href="/products?type=burger"><%= image_tag("burger-specials.png", width: "960", height: "590", alt: "") %></a>
+    <h2>Bienvenidos a Retro Diner!</h2>
+    <p style="font-family: 'Lobster 14'; font-size: 20px; color: #4c1407;">
+      Las mejores hamburguesas y perros calientes aguardan por ti. Escoge y ordena de manera imediata con nuestro 
+      <%= link_to "menú", "/products?type=burger", 
+          style:"font-family: 'Lobster 14';  font-size: 20px; color: #4c1407;"%> 
+      el plato que desees y en menos de 45 min nuestros repartidores estaran en tu puerta.
+    </p>
+    <ul>
+      <li>
+        <a href="/products?type=hotdog"><%= image_tag("hotdogs.jpg", width: "284", height: "214", alt: "") %></a>
+      </li>
+      <li>
+        <a href="/products?type=shake"><%= image_tag("shakes.jpg", alt: "", width: "284", height: "214") %></a>
+      </li>
+      <li>
+        <a href="/products?type=breakfast"><%= image_tag("breakfast2.jpg", alt: "", width: "284", height: "214") %></a>
+      </li>
+    </ul>
+  </div>
+</div>

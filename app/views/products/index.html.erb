@@ -1,0 +1,58 @@
+
+
+  <div id="body">
+    <div class="content">
+      <div>
+        <div>
+          <h1>Burgers</h1>
+          <div> <%= image_tag(@typeOf+".jpg",  alt: "") %> </div>
+          <ul>
+            <% @products.each do |product| %>
+              <% if product.typeOf == @typeOf %>
+                <li>
+                  <h2> <%= link_to product.name, product %></h2>
+                  <p>
+                    <%= product.description %>
+                  </p>
+                  <span class="price"><%= product.price%>Bs</span>
+                </li>
+              <% end %>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+        <div>
+         <table size="100%">
+            <tr>
+              <td class="count">Sub-total:</td>
+              <td align="right" class="count">16598.00 Bs</td> 
+            </tr>
+            <tr>
+              <td class="count">I.V.A.:</td>
+              <td align="right" class="count">91.76 Bs</td> 
+            </tr>
+            <tr>
+              <td class="count">Total:</td>
+              <td align="right" class="count">7389.76 Bs</td> 
+            </tr>
+          </table>  
+        </div>
+      <h1>Menu</h1>
+      <ul class="navigation">
+        <li class="first">
+          <%= isActive("HAMBURGUESAS", "burger", @typeOf) %>
+        </li>
+        <li>
+          <%= isActive("HOTDOGS", "hotdog", @typeOf) %>
+        </li>
+        <li>
+          <%= isActive("SHAKES", "shake", @typeOf) %>
+        </li>
+        <li>
+          <%= isActive("BREAKFAST", "breakfast", @typeOf) %>
+        </li>
+      </ul>
+     </div>
+  </div>
