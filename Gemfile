@@ -40,7 +40,8 @@ gem 'bootstrap-sass'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 
 
