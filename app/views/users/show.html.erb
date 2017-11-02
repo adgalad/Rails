@@ -1,20 +1,27 @@
 <div class="center">
 	<p id="notice"><%= notice %></p>
-	<h1>Profile</h1>
-	<p>
-	  <strong>Username:</strong>
-	  <%= @user.username %>
-	</p>
+<div id="body">
+  <div class="jumbotron">
+      <h1>Welcome!</h1>
+  </div>
+  
+	<% if current_user %>
+	  <div class="page-header">
+	    <h1>Here is some info about you...</h1>
+	  </div>
+	  <div class="panel panel-default">
+	    <div class="panel-body">
+	      	<a href=<%= current_user.image_url %>><%= image_tag current_user.image_url, alt: current_user.name %> </a>
+	        <li><strong>Name:</strong> <%= current_user.name %></li>
+	        <li><strong>Provider:</strong> <%= current_user.provider %></li>
+	        <li><strong>uID:</strong> <%= current_user.uid %></li>
+	        <li><strong>Location:</strong> <%= current_user.location %></li>
+	        <!-- <li><strong>URL:</strong> <%= current_user.url %></li> -->
+	    </div>
+	  </div>
+	<% else %>
 
-	<p>
-	  <strong>Name:</strong>
-	  <%= @user.name %>
-	</p>
-
-	<p>
-	  <strong>Email:</strong>
-	  <%= @user.email %>
-	</p>
+	<% end %>
 
 	<%= link_to 'Edit', edit_user_path(@user) %> |
 	<%= link_to 'Back', users_path %>

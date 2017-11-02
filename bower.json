@@ -1,0 +1,20 @@
+{
+  "name": "Ruby_Rails",
+  "homepage": "https://github.com/adgalad/Rails",
+  "authors": [
+    "adgalad <carlos.25896@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jso": "^2.0.3"
+  }
+}
