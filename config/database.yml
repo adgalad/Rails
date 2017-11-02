@@ -30,7 +30,7 @@ default: &default
   encoding: unicode
   pool: 5
   timeout: 5000
-  host: 0.0.0.0
+  host: retrodinerdb.cu3gjqyl6fhn.us-east-2.rds.amazonaws.com
   username: root
   password: password
 
